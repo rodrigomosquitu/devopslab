@@ -22,6 +22,7 @@ jobs:
 
       - name: Install Requirements
         run:  pip install flask flask-wtf tox pytest-cov
+        run:  pip install --upgrade setuptools
 
       - name: Unit Test
         run: python -m unittest -v test
